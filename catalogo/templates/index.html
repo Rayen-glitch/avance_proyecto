@@ -1,0 +1,45 @@
+{% load staticfiles %}
+
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div> 
+  <!-- ################################################################################################ -->
+  <div class="wrapper row1">
+      <header id="header" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <div id="logo" class="fl_left">
+          <h1><span>2 + 2 = </span><span style="color:#FE0000">5</span></h1>
+      </div>
+      <nav id="mainav" class="fl_right">
+          <ul class="clear">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="pages/music.html">EXPLORE</a></li>
+          <li><a href="pages/signup.html">SIGN UP</a></li>
+          <li><a href="pages/login.html">LOGIN</a></li>
+          </ul>
+      <form action="#">
+          <select>
+              <option selected="selected" value="">MENU</option>
+              <option value="index.html">HOME</option>
+              <option value="pages/music.html">EXPLORE</option>
+              <option value="pages/signup.html">SIGNUP</option>
+              <option value="pages/login.html">LOGIN</option>
+          </select>
+      </form>    
+      </nav>
+      <!-- ################################################################################################ -->
+      </header>
+  </div>
+</div>
+<video src="{% static 'vid/star.mp4' %}"  id="video_fondo" loop autoplay preload muted></video>
+<footer>
+  <div class="reproductor">
+          <i class="flecha"></i>
+          <div class="overlay2">
+              <audio src= "music/Queen.mp3"  controls="controls" autoplay></audio> 
+          </div>
+  </div>
+</footer>
+
+{% endblock %}
